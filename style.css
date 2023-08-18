@@ -1,3 +1,60 @@
+:root {
+    --roxo-color: #CDA7FF;
+    --darkb-color: #155274;
+}
+
+body {
+    background-color: #615968;
+}
 .roxo {
-    color: #CDA7FF;
+    color: var(--roxo-color);
+}
+
+.bi-person-circle {
+    font-size: 22px;
+}
+
+#main-image-container {
+    overflow: hidden;
+}
+.main-image {
+    transition: 0.2s ease;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.main-image:hover {
+    scale: 1.1;
+}
+
+#main-text-container{
+    background-color: var(--roxo-color);
+}
+
+a{
+    text-decoration: none;
+}
+
+.-main-text {
+    color: var(--darkb-color);
+    font-size: 2.5em;
+    transition: 0.2s ease;
+
+}
+
+.-main-text:hover {
+    color: white;
+}
+
+.-main-subtext p {
+    padding-top: 25%;
+    font-size: 20px;
+    color: black;
+    transition: 0.2s ease;
+
+}
+
+.-main-subtext p:hover {
+    color: white;
 }
