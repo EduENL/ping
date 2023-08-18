@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap');
+
+
 :root {
     --roxo-color: #CDA7FF;
-    --darkb-color: #155274;
+    --darkb-color: #1D438A;
 }
 
 body {
     background-color: #615968;
+    font-family: 'Josefin Sans', sans-serif;
 }
 .roxo {
     color: var(--roxo-color);
@@ -47,14 +51,26 @@ a{
     color: white;
 }
 
-.-main-subtext p {
-    padding-top: 25%;
+.-main-subtext {
+    padding-top: 100%;
     font-size: 20px;
     color: black;
     transition: 0.2s ease;
 
 }
 
-.-main-subtext p:hover {
+.-main-subtext:hover {
     color: white;
+}
+
+.bg-style {
+    background-image: linear-gradient(to right, #9A8BE8, #CDA7FF);
+}
+
+.bg-style a {
+    color: white;
+}
+
+.bg-style:hover {
+    filter: brightness(90%);
 }
