@@ -28,10 +28,6 @@ body {
     width: 100%;
 }
 
-.main-image:hover {
-    scale: 1.1;
-}
-
 #main-text-container{
     background-color: var(--roxo-color);
 }
@@ -47,10 +43,6 @@ a{
 
 }
 
-.-main-text:hover {
-    color: white;
-}
-
 .-main-subtext {
     padding-top: 100%;
     font-size: 20px;
@@ -59,7 +51,15 @@ a{
 
 }
 
-.-main-subtext:hover {
+#main-container:hover img {
+    scale: 1.1;
+}
+
+#main-container:hover .-main-text {
+    color: white;
+}
+
+#main-container:hover .-main-subtext {
     color: white;
 }
 
@@ -87,7 +87,7 @@ a{
   margin: 0 0.5em;
   box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
   border: none;
-  height: 300px;
+  height: 325px;
 }
 .carousel-control-prev,
 .carousel-control-next {
@@ -97,6 +97,67 @@ a{
   border-radius: 50%;
   top: 50%;
   transform: translateY(-50%);
+}
+
+#games-container {
+    margin-top: 60px;
+}
+#games-container h1 {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.small-image-container {
+    height: 250px;
+    margin-bottom: 0px;
+    overflow: hidden;
+}
+
+#img2 {
+    transition: 0.2s ease;
+}
+
+#section-reviews {
+    margin-bottom: 30px;
+}
+#section-reviews h2 {
+    font-style: none;
+    color: black;
+}
+#section-reviews:hover img {
+    scale: 1.1;
+}
+
+#section-reviews:hover h2 {
+    color: white;
+}
+
+.small-container {
+    background-color: var(--roxo-color);
+    padding: 20px 20px;
+}
+
+@media (max-width: 768px) {
+    #main-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #main-image-container {
+        width: 100%;
+    }
+
+    #main-text-container {
+        width: 100%;
+    }
+
+    .-main-text {
+        font-size: 1.9em;
+    }
+
+    .-main-subtext {
+        font-size: 60%;
+    }
 }
 @media (min-width: 768px) {
   .carousel-item {
@@ -117,7 +178,7 @@ a{
 .card img {
     max-height: 100%;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 
   .carousel-item {
     margin-right: 0;
