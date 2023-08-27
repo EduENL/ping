@@ -11,6 +11,9 @@
     --darkb-color: #1D438A;
 }
 
+.text-secondary {
+    color: #CDA7FF !important;
+}
 body {
     background-color: #615968;
     font-family: 'Josefin Sans', sans-serif;
@@ -19,8 +22,20 @@ body {
     color: var(--roxo-color);
 }
 
+.navbar-brand {
+    font-family: 'retro', Times, serif;
+    color: var(--roxo-color);
+}
 .bi-person-circle {
     font-size: 22px;
+}
+
+.bi-person-circle:hover {
+    color: white;
+}
+
+#nav-botao:hover {
+    color: rgba(255, 255, 255, 0.651)
 }
 
 #main-image-container {
@@ -161,6 +176,47 @@ a{
 #small-container-retro h2 {
     font-family: 'retro', Times, serif;
 }
+
+#card-news {
+    background-color: transparent;
+    box-shadow: none;
+    transition: transform 0.5s;
+    display: flex;
+}
+
+#card-news:hover {
+    border: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+    background-color: #6c6474;
+}
+
+#card-news:hover #card-title {
+    color: var(--roxo-color);
+}
+
+#card-news:hover img {
+    scale: 1.1;
+    filter: brightness(100%)
+}
+
+#card-img {
+    height: 200px;
+    overflow: hidden;
+}
+
+#-card-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(80%);
+    transition: 0.2s ease;
+}
+
+#card-title {
+    color: white;
+}
+
+
 @media (max-width: 768px) {
     #main-container {
         display: flex;
@@ -181,6 +237,10 @@ a{
 
     .-main-subtext {
         font-size: 60%;
+    }
+
+    #card-img {
+        display: none;
     }
 }
 @media (min-width: 768px) {

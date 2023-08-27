@@ -16,30 +16,30 @@
 <body>
 
     <!-- header -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" data-bs-theme="dark">
   <div class="container-fluid mx-5">
-    <a class="navbar-brand" href="#">PING</a>
+    <a class="navbar-brand" href="index.html">PING</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto align-items-center">
           <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle active" id="nav-botao" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Games
               </a>
               <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Reviews</a></li>
-                  <li><a class="dropdown-item" href="#">G(old)</a></li>
+                  <li><a class="dropdown-item" href="#games-container">Reviews</a></li>
+                  <li><a class="dropdown-item" href="#games-retro">G(old)</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">New</a></li>
+                  <li><a class="dropdown-item" href="#noticias">Notícias</a></li>
               </ul>
           </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">News</a>
+          <a class="nav-link active"  id="nav-botao" aria-current="page" href="#noticias">Notícias</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"><i class="bi bi-person-circle roxo"></i></a>
+          <a class="nav-link" href="Login.html"><i class="bi bi-person-circle roxo"></i></a>
         </li>
       </ul>
     </div>
@@ -63,13 +63,13 @@
 
     <!-- button -->
 
-    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-      <button class="btn btn-primary me-md-2 px-5 py-3 bg-style" type="button"><a href="#">News</a></button>
-      <button class="btn btn-primary px-5 py-3 bg-style" type="button"><a href="#">G(old)</a></button>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-center" id="botao">
+      <button class="btn btn-primary me-md-2 px-5 py-3 bg-style" type="button"><a href="#noticias">Notícias</a></button>
+      <button class="btn btn-primary px-5 py-3 bg-style" type="button"><a href="#games-retro">G(old)</a></button>
     </div>
 
-    <!--  -->
-    <div class="">
+    <!-- Lançamentos -->
+    <div id="lançamentos">
 
       <h2 class="container" id="calendario">Calendário de lançamentos</h2>
       <div id="carouselExampleControls" class="carousel" data-bs-ride="carousel">
@@ -230,9 +230,9 @@
         </div>
     </div>
 
-
+    <!-- Reviews -->
     <div class="container" id="games-container">
-        <div class="col-12">
+        <div class="col-12 my-4">
             <h1>Reviews</h1>
         </div>
         <div class="row gx-md-5">
@@ -317,9 +317,11 @@
         </div>
     </div>
 
+    <!-- retro -->
+
     <div class="container" id="games-container">
-        <div class="col-12">
-            <h1 class="h1-games-retro">Reviews - <span class="gold">G(OLD)</span></h1>
+        <div class="col-12 my-4">
+            <h1 class="h1-games-retro" id="games-retro">Reviews - <span class="gold">G(OLD)</span></h1>
         </div>
         <div class="row gx-md-5">
             <div class="col-12 col-md-6" id="section-reviews">
@@ -335,7 +337,145 @@
                 </div>
                 </div>
             </div>
+            <div class="col-12 col-md-6" id="section-reviews">
+                <div class="small-image-container center-image"><a href="#"><img src="img/baldurs-gate-3 (3).jpg" id="img2"></a></div>
+                <div class="small-container" id="small-container-retro">
+                    <a href="#">
+                        <h2>Baldur's Gate 3: Das mesas aos consoles!</h2>
+                    </a>
+                <div class="row">
+                    <div class="col-12 text-truncate">
+                        Este texto é muito grande, infelizmente precisamos resumir para caber na páginaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6" id="section-reviews">
+                <div class="small-image-container center-image"><a href="#"><img src="img/baldurs-gate-3 (3).jpg" id="img2"></a></div>
+                <div class="small-container" id="small-container-retro">
+                    <a href="#">
+                        <h2>Baldur's Gate 3: Das mesas aos consoles!</h2>
+                    </a>
+                <div class="row">
+                    <div class="col-12 text-truncate">
+                        Este texto é muito grande, infelizmente precisamos resumir para caber na páginaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6" id="section-reviews">
+                <div class="small-image-container center-image"><a href="#"><img src="img/baldurs-gate-3 (3).jpg" id="img2"></a></div>
+                <div class="small-container" id="small-container-retro">
+                    <a href="#">
+                        <h2>Baldur's Gate 3: Das mesas aos consoles!</h2>
+                    </a>
+                <div class="row">
+                    <div class="col-12 text-truncate">
+                        Este texto é muito grande, infelizmente precisamos resumir para caber na páginaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.
+                    </div>
+                </div>
+                </div>
+            </div>
         </div>
+    </div>
+
+    <!-- news -->
+    <div class="container" id="noticias">
+        <div class="col-12 my-4">
+            <h1 class="text-light" id="">Notícias</h1>
+        </div>
+
+        <div class="card mb-3" id="card-news" style="max-width: 800px; max-height: 200px;">
+            <div class="row g-0">
+              <div class="col-md-4" id="card-img">
+                <a href="#"><img src="img/baldurs-gate-3 (3).jpg" class="img-fluid" id="-card-img" alt=""></a>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h4 class="card-title"><a href="#" id="card-title">Card title</a></h5>
+                  <p class="card-text text-light">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-white-50">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        <div class="card mb-3" id="card-news" style="max-width: 800px; max-height: 200px;">
+            <div class="row g-0">
+              <div class="col-md-4" id="card-img">
+                <a href="#"><img src="img/baldurs-gate-3 (3).jpg" class="img-fluid" id="-card-img" alt=""></a>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h4 class="card-title"><a href="#" id="card-title">Card title</a></h5>
+                  <p class="card-text text-light">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-white-50">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        <div class="card mb-3" id="card-news" style="max-width: 800px; max-height: 200px;">
+            <div class="row g-0">
+              <div class="col-md-4" id="card-img">
+                <a href="#"><img src="img/baldurs-gate-3 (3).jpg" class="img-fluid" id="-card-img" alt=""></a>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h4 class="card-title"><a href="#" id="card-title">Card title</a></h5>
+                  <p class="card-text text-light">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-white-50">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        <div class="card mb-3" id="card-news" style="max-width: 800px; max-height: 200px;">
+            <div class="row g-0">
+              <div class="col-md-4" id="card-img">
+                <a href="#"><img src="img/baldurs-gate-3 (3).jpg" class="img-fluid" id="-card-img" alt=""></a>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h4 class="card-title"><a href="#" id="card-title">Card title</a></h5>
+                  <p class="card-text text-light">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-white-50">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        <div class="card mb-3" id="card-news" style="max-width: 800px; max-height: 200px;">
+            <div class="row g-0">
+              <div class="col-md-4" id="card-img">
+                <a href="#"><img src="img/baldurs-gate-3 (3).jpg" class="img-fluid" id="-card-img" alt=""></a>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h4 class="card-title"><a href="#" id="card-title">Card title</a></h5>
+                  <p class="card-text text-light">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-white-50">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        <div class="card mb-3" id="card-news" style="max-width: 800px; max-height: 200px;">
+            <div class="row g-0">
+              <div class="col-md-4" id="card-img">
+                <a href="#"><img src="img/baldurs-gate-3 (3).jpg" class="img-fluid" id="-card-img" alt=""></a>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h4 class="card-title"><a href="#" id="card-title">Card title</a></h5>
+                  <p class="card-text text-light">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-white-50">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        
     </div>
 
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
