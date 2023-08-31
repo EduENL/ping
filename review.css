@@ -1,23 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap');
 
-
+@font-face {
+    font-family: 'retro';
+    src: url(assets/Retro\ Gaming.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 :root {
     --roxo-color: #CDA7FF;
     --darkb-color: #1D438A;
 }
 
-/* Navbar */
-
+.text-secondary {
+    color: #CDA7FF !important;
+}
 body {
     background-color: #615968;
     font-family: 'Josefin Sans', sans-serif;
 }
+
 .roxo {
     color: var(--roxo-color);
 }
 
+.navbar-brand {
+    font-family: 'retro', Times, serif;
+    color: var(--roxo-color);
+}
 .bi-person-circle {
     font-size: 22px;
+}
+
+.bi-person-circle:hover {
+    color: white;
+}
+
+#nav-botao:hover {
+    color: rgba(255, 255, 255, 0.651)
 }
 
 /* Banner */
@@ -34,13 +53,13 @@ body {
     display: flex;
     justify-content: center;
     width: 3000px;
-    height: 330px;
- 
+    height: 100%;
 }
 
 .text-1 {
     color: #fff;
     margin-top: 25px;
+    font-size: 18px;
     /* text-decoration: solid; */
 }
 
@@ -52,6 +71,9 @@ body {
     margin-bottom: 20px;
 }
 
+.comprar-container {
+    margin-left: 30px;
+}
 .comprar-p {
     color: white;
     padding-top: 20px;
@@ -63,7 +85,7 @@ body {
 
 .container2 {
     background-color: rgba(0, 0, 0, 0.407);
-    height: 500px;
+    height: auto;
 }
 
 .afasta {
@@ -74,6 +96,7 @@ body {
     margin: 25px 0;
     text-align: justify;
     color: white;
+    font-size: 18px;
 } 
 
 .bi {
@@ -112,6 +135,17 @@ body {
     margin: 40px 25px;
     color: white;
 }
+
+.text2 {
+    border-bottom: solid 1px rgb(255, 255, 255);
+}
+.text3 {
+    border-bottom: solid 1px rgb(255, 255, 255);
+}
+.text4 {
+    border-bottom: solid 1px rgb(255, 255, 255);
+}
+
 .text2 p {
     margin: 20px 45px;
     text-align: justify;
@@ -131,4 +165,50 @@ body {
     margin: 20px 45px;
     text-align: justify;
     color: white;
+}
+
+footer{
+    margin-top: 90px;
+    background-color: #343A40;
+}
+
+#-footer {
+    justify-content: space-between;
+}
+
+#--footer-h5{ /*Títulos*/
+    color: var(--roxo-color);
+}
+.nós{
+    color: white;
+}
+
+.links{
+    text-decoration: none;
+    color: #fff;
+}
+
+.bi-instagram{
+    color: white;
+}
+
+.bi-facebook{
+    color: white;
+}
+
+.bi-envelope-at-fill{
+    color: white;
+}
+
+.bi-telephone {
+    color: white;
+}
+
+.Copyright{
+    text-align: center;
+    color: rgb(146, 143, 143);
+}
+
+.ping-copyrigth {
+    color: rgb(146, 143, 143);
 }

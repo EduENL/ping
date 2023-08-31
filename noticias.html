@@ -15,47 +15,47 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous" defer></script>
 
   <!-- Link para CSS -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="noticia.css">
 
   <title>Conteúdo</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-        <div class="container-fluid mx-5">
-          <a class="navbar-brand" href="#">PING</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto align-items-center">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Games
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Reviews</a></li>
-                        <li><a class="dropdown-item" href="#">G(old)</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">New</a></li>
-                    </ul>
-                </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">News</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="bi bi-person-circle roxo"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" data-bs-theme="dark">
+    <div class="container-fluid mx-5">
+      <a class="navbar-brand" href="index.html">PING</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" id="nav-botao" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Games
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#games-container">Reviews</a></li>
+                    <li><a class="dropdown-item" href="#games-retro">G(old)</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#noticias">Notícias</a></li>
+                </ul>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link active"  id="nav-botao" aria-current="page" href="#noticias">Notícias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Login.html"><i class="bi bi-person-circle roxo"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
       <!-- Banner -->
       <!-- ________________________________________________________ -->
 
       <div class="container" id="imagem">
         <div class="col-md-12">
-          <img src="img/img1.jpeg" class="img-fluid" alt="#">
+          <img src="img/news/starfield_news1.jpeg" class="img-fluid" alt="#">
         </div>
       </div> 
 
@@ -63,21 +63,67 @@
       <!-- ________________________________________________________ -->
 
       <div class="container d-flex tudo py-5">
-  
+
         <div class="col-md-9">
           <div>
-            <p class="text-1">Baldur's Gate 3 é um RPG de fantasia baseado no universo de Dungeons & Dragons, que continua a saga iniciada pelos clássicos da BioWare. Desenvolvido pelo Larian Studios, o jogo oferece uma experiência rica, imersiva e criativa, que permite ao jogador explorar um mundo vasto e detalhado, interagir com personagens complexos e memoráveis, e enfrentar desafios variados e divertidos.</p>
+            <h1 class="roxo">A história por trás de Starfield, o jogo que demorou 25 anos para nascer.</h1>
+          </div>
+          <div>
+            <p class="text-1">Sendo um dos jogos mais aguardados para 2023, o RPG de exploração espacial é a nova aposta da Bethesda depois alguns anos sem uma nova IP (propriedade intelectual), dando início para uma nova franquia. E quando dizemos alguns anos, não é pouca coisa: a desenvolvedora trabalha na ideia do game há duas décadas e meia. <br> Mas afinal, por que Starfield levou 25 anos para ser feito? Por que a empresa demorou tanto tempo desenvolvendo o jogo? Vamos responder essa pergunta a seguir!</p>
           </div>
           <div class="afasta">
-            <img src="img/img2.jpeg" class="img-fluid" alt="#">
+            <img src="img/news/starfield_news2.jpeg" class="img-fluid" alt="#">
           </div>
           <div >
-            <p class="text-1">Baldur's Gate 3 é um RPG de fantasia baseado no universo de Dungeons & Dragons, que continua a saga iniciada pelos clássicos da BioWare. Desenvolvido pelo Larian Studios, o jogo oferece uma experiência rica, imersiva e criativa, que permite ao jogador explorar um mundo vasto e detalhado, interagir com personagens complexos e memoráveis, e enfrentar desafios variados e divertidos.!</p>
+            <p class="text-1">Vamos começar com o personagem principal dessa história: <span class="roxo">Todd Howard</span>. O jovem rapaz apaixonado por jogos ficou famoso após seu trabalho na Bethesda, mas nem sempre trabalhou com games. <br> Antes de entrar para a Bethesda, Todd estudava finanças em uma cidadezinha no estado da Virginia. Apaixonado por RPGs clássicos como Wizardry e Ultima III: Exodus, ele tentou uma vaga de trabalho numa desenvolvedora que ficava no caminho da faculdade durante seu último ano: a Bethesda Softworks. <br> Porém, a chave de virada para Todd viria em 1996, quando participou pela primeira vez da saga The Elder Scrolls, como designer em The Elder Scrolls II: Daggerfall. O jogo foi tão bem recebido que a Bethesda designou mais responsabilidades pra Todd em seu próximo jogo, The Elder Scrolls Adventures: Redguard. <br> O projeto, no entanto, foi um fracasso gigantesco por um problema besta: o jogo só era compatível com uma única placa de vídeo, o que acabou rendendo problemas financeiros para a Bethesda. Como líder de projeto da saga até aí, ele já tinha a confiança necessária que a empresa precisava para deixar a franquia em boas mãos, trabalhando também como líder no episódio 3: Morrowind, um grande sucesso da companhia.</p>
           </div>
           <div class="afasta">
-            <img src="img/img3.jpeg" class="img-fluid" alt="#">
+            <img src="img/news/starfield_news3.jpeg" class="img-fluid" alt="#">
           </div>
-          <div class="texto">
-            <p>Se você gosta de jogos de RPG e de Dungeons & Dragons, Baldur's Gate 3 é um jogo que vale a pena conferir. Você pode encontrar mais informações sobre o jogo nos seguintes links: [IGN](^1^), [TechRadar](^4^), [GameSpot](^3^) e [IGN Brasil](^2^). Espero que tenha gostado da minha breve review de Baldur's Gate 3. </p>
+          <div class="text-1">
+            <p>E aqui estamos: depois de alguns adiamentos e incontáveis horas de gameplay já confirmadas pelos desenvolvedores, Starfield está entre nós. O sinal verde para a produção do jogoo só veio em 2013, dois anos antes do lançamento de Fallout 4, onde todos se perguntaram “qual o próximo grande projeto que o estúdio vai trabalhar por anos?". <br> Era a hora certa. O desenvolvimento real do jogo começou em 2015, levando oito anos pra ser terminado. Inclusive, poucos jogos levam tanto tempo assim em sua fase de desenvolvimento: um exemplo deles é Red Dead Redemption 2, que mostra como a espera vale a pena. Ainda assim, Todd disse que Starfield só ficou realmente divertido para jogar no ano de seu lançamento original, 2022, quatro anos depois de seu anúncio na E3 2018. <br> Starfield será lançado no PC, Xbox Series S e X no dia 6 de outubro, chegando também no Xbox Game Pass com suporte para nuvem. Para quem comprou a versão Deluxe do título, o acesso ao jogo será liberado em 1° de setembro. </p>
           </div>
         </div>
+        </div>
+
+        <footer>
+          <div class="container p-4">
+            <div class="row">
+              <div class="col-lg-6 col-md-12 mb-4">
+                <h5 class="mb-3" id="--footer-h5">Sobre Nós</h5>
+                <p class="nós">
+                  Uma empresa especializada em comentários e reviews de jogos, diretamente de jogadores a outros jogadores. A nossa missão é oferecer uma plataforma onde os gamers possam compartilhar as suas opiniões, dicas, críticas e elogios sobre os jogos que jogam, criando uma comunidade de jogadores que se ajudem mutuamente a escolher os melhores jogos, a superar os desafios e a se divertir.
+                </p>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4">
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4">
+                <h5 class="mb-1" id="--footer-h5">Contato</h5>
+                <ul class="list-unstyled mb-0">
+  
+              <li class="mb-2">
+                <i class="bi bi-instagram "> @ping_games</i>
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-facebook"> @ping_games</i>
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-envelope-at-fill"> ping.games@gmail.com</i>
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-telephone"> (55)11 9999-9999</i>
+              </li>
+  
+                </ul>
+                
+              </div>
+            </div>
+          </div>
+          <div class="Copyright">
+            © 2023 Copyright:
+            <a class="ping-copyrigth" href="#">Ping.com</a>
+          </div>
+        </footer>
+
+</body>
+</html>
