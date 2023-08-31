@@ -50,6 +50,54 @@
     font-size: 16px;
  }
 
+
+ footer{
+   margin-top: 90px;
+   background-color: #343A40;
+}
+
+#-footer {
+   justify-content: space-between;
+}
+
+#--footer-h5{ /*Títulos*/
+   color: var(--roxo-color);
+}
+.nós{
+   color: white;
+}
+
+.links{
+   text-decoration: none;
+   color: #fff;
+}
+
+.bi-instagram{
+   color: white;
+}
+
+.bi-facebook{
+   color: white;
+}
+
+.bi-envelope-at-fill{
+   color: white;
+}
+
+.bi-telephone {
+   color: white;
+}
+
+.Copyright{
+   text-align: center;
+   color: rgb(146, 143, 143);
+}
+
+.ping-copyrigth {
+   color: rgb(146, 143, 143);
+}
+
+
  @media only screen and (max-width: 768px) {
     .box-area {
         margin: 0 10px;
