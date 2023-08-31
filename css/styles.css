@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap');
+
+
+:root {
+    --roxo-color: #CDA7FF;
+    --darkb-color: #1D438A;
+}
+
+/* Navbar */
+
+body {
+    background-color: #615968;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.roxo {
+    color: var(--roxo-color);
+}
+
+.bi-person-circle {
+    font-size: 22px;
+}
+
+/* Banner */
+/* __________________________________________________ */
+#imagem img {
+    height: 100%;
+   
+}
+#imagem iframe {
+    width: 100% ;
+}
+.img-fluid {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    width: 3000px;
+    height: 330px;
+ 
+}
+
+.text-1 {
+    color: #fff;
+    margin-top: 25px;
+    /* text-decoration: solid; */
+}
+
+.btn {
+    margin-top: 25px;
+   border-radius: 3;
+   color: #fff;
+   font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.comprar-p {
+    color: white;
+    padding-top: 20px;
+}
+.comprar-span {
+    padding-top: 0px;
+    color: white;
+}
+
+.container2 {
+    background-color: rgba(0, 0, 0, 0.407);
+    height: 500px;
+}
+
+.afasta {
+    padding-right: 20px;
+}
+
+.texto {
+    margin: 25px 0;
+    text-align: justify;
+    color: white;
+} 
+
+.bi {
+    margin-left: 5px; 
+    font-size: 20px;
+ }
+ .lilas {
+     color: #cda7ff;
+ }
+ .nota {
+     margin-right: 15px;
+     font-size: 20px;
+     border-bottom: solid 1px rgb(255, 255, 255);
+ }
+ .nota::before {
+     background-color: #000000;
+     height: 50px;
+     width: 50px;
+ }
+
+ .afasta2 {
+    padding-left: 7%;
+}
+
+/* Comentários */
+/* ____________________________ */
+.container1 {
+    background-color: rgba(0, 0, 0, 0.500);
+    border-radius: 2px;
+    /* width: 765px; */
+    height: auto;
+}
+
+.user {
+    display: flex;
+    margin: 40px 25px;
+    color: white;
+}
+.text2 p {
+    margin: 20px 45px;
+    text-align: justify;
+    color: white;
+}
+.text3 p {
+    margin: 20px 45px;
+    text-align: justify;
+    color: white;
+}
+.text4 p {
+    margin: 20px 45px;
+    text-align: justify;
+    color: white;
+}
+.text5 p {
+    margin: 20px 45px;
+    text-align: justify;
+    color: white;
+}

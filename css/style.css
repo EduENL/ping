@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap');
+
+
+:root {
+    --roxo-color: #CDA7FF;
+    --darkb-color: #1D438A;
+}
+
+/* Navbar */
+
+body {
+    background-color: #615968;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.roxo {
+    color: var(--roxo-color);
+}
+
+.bi-person-circle {
+    font-size: 22px;
+}
+
+.tudo {
+    justify-content: center;
+    color: white;
+}
