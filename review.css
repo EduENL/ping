@@ -60,6 +60,7 @@ body {
     color: #fff;
     margin-top: 25px;
     font-size: 18px;
+    text-align: justify;
     /* text-decoration: solid; */
 }
 
@@ -119,6 +120,16 @@ body {
 
  .afasta2 {
     padding-left: 7%;
+}
+
+#btn-comprar a {
+    text-decoration: none;
+    color: white;
+}
+
+#btn-comprar:hover {
+    text-decoration: none;
+    background-color: rgb(10, 176, 218);
 }
 
 /* Comentários */
