@@ -1,3 +1,26 @@
+<?php
+
+if(isset($_POST['submit']))
+{
+    // print_r($_POST['nome']);
+    // print_r($_POST['telefone']);
+    // print_r($_POST['email']);
+    // print_r($_POST['senha']);
+    // print_r($_POST['sexo']);
+
+    include_once ('config.php');
+
+    $nome = $_POST['nome']; 
+    $telefone = $_POST['telefone']; 
+    $email = $_POST['email']; 
+    $senha = $_POST['senha']; 
+    $sexo = $_POST['sexo']; 
+    
+    $result =  mysqli_query($conexao, "INSERT INTO usuarios(nome,telefone,email,senha,sexo) VALUES($nome,$telefone,$email,$senha,$sexo" );
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -36,7 +59,7 @@
                 <p>Complete os campos e realize seu cadastro.</p>
             </div>
             <div>
-                <form action="#" method="post">
+                <form action="cadastro.php" method="post">
                     <div class="input-group mb-3">
                         <input type="text" name="nome" id="nome" class="form-control form-control-lg bg-light fs-6" placeholder="Nome:">
                         <input type="tel" name="telefone" id="telefone" class="form-control form-control-lg bg-light fs-6 ms-3" placeholder="Telefone:">
@@ -64,6 +87,8 @@
                     <div class="input-group mb-3">
                         <button type="submit" class="btn btn-lg btn-primary w-100 fs-6" style="background-color: #2F1062; border-color: black;" >Cadastrar-se</button>
                     </div>
+                    <!-- <br> -->
+                    <input type="submit" name="submit" id="submit">
                 </form>
             </div>
                     
