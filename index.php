@@ -16,42 +16,16 @@
 <body>
 
     <!-- header -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" data-bs-theme="dark">
-  <div class="container-fluid mx-5">
-    <a class="navbar-brand" href="index.html">PING</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto align-items-center">
-          <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle active" id="nav-botao" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Games
-              </a>
-              <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#games-container">Reviews</a></li>
-                  <li><a class="dropdown-item" href="#games-retro">G(old)</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#noticias">Notícias</a></li>
-              </ul>
-          </li>
-        <li class="nav-item">
-          <a class="nav-link active"  id="nav-botao" aria-current="page" href="#noticias">Notícias</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Login.html"><i class="bi bi-person-circle roxo"></i></a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+    <?php
+        include_once("assets/header.php")
+    ?>
 
     <!-- main image -->
     <div class="container d-flex my-5" id="main-container">
-        <div class="col-7" id="main-image-container"><a href="review.html"><img src="img/games_games_review/baldurs-gate-3.jpg" class="main-image"></a></div>
+        <div class="col-7" id="main-image-container"><a href="review.php"><img src="img/games_games_review/baldurs-gate-3.jpg" class="main-image"></a></div>
         <div class="col-5" id="main-text-container">
             <div class="m-5">
-                <a href="review.html" class="-main-text">Baldur's Gate 3<br>É o jogo destaque do mês de agosto.
+                <a href="review.php" class="-main-text">Baldur's Gate 3<br>É o jogo destaque do mês de agosto.
                 <br>
                 <span class="-main-subtext">
                     Veja as impressões iniciais do aclamado RPG...
@@ -237,9 +211,9 @@
         </div>
         <div class="row gx-md-5">
             <div class="col-12 col-md-6" id="section-reviews">
-                <div class="small-image-container center-image"><a href="review.html"><img src="img/games_games_review/baldurs-gate-3 (3).jpg" id="img2"></a></div>
+                <div class="small-image-container center-image"><a href="review.php"><img src="img/games_games_review/baldurs-gate-3 (3).jpg" id="img2"></a></div>
                 <div class="small-container">
-                    <a href="review.html">
+                    <a href="review.php">
                         <h2>Baldur's Gate 3: Das mesas aos consoles!</h2>
                     </a>
                 <div class="row">
@@ -250,9 +224,9 @@
                 </div>
             </div>
             <div class="col-12 col-md-6" id="section-reviews">
-                <div class="small-image-container center-image"><a href="review3.html"><img src="img/games_games_review/sekiro2.png" id="img2"></a></div>
+                <div class="small-image-container center-image"><a href="review3.php"><img src="img/games_games_review/sekiro2.png" id="img2"></a></div>
                 <div class="small-container">
-                    <a href="review3.html">
+                    <a href="review3.php">
                         <h2>Sekiro: Shadows Die Twice: Espadas afiadas e sofrimento! </h2>
                     </a>
                 <div class="row">
@@ -325,9 +299,9 @@
         </div>
         <div class="row gx-md-5">
             <div class="col-12 col-md-6" id="section-reviews">
-                <div class="small-image-container center-image"><a href="review_2.html"><img src="img/gold/chrono trigger.png" id="img2"></a></div>
+                <div class="small-image-container center-image"><a href="review_2.php"><img src="img/gold/chrono trigger.png" id="img2"></a></div>
                 <div class="small-container" id="small-container-retro">
-                    <a href="review_2.html">
+                    <a href="review_2.php">
                         <h2>Chrono Trigger: Uma Jornada através do Tempo.</h2>
                     </a>
                 <div class="row">
@@ -388,11 +362,11 @@
         <div class="card mb-3" id="card-news" style="max-width: 800px; max-height: 200px;">
             <div class="row g-0">
               <div class="col-md-4" id="card-img">
-                <a href="noticias.html"><img src="img/news/starfield-dinossauros_yrN9aJc (1).jpg" class="img-fluid" id="-card-img" alt=""></a>
+                <a href="noticias.php"><img src="img/news/starfield-dinossauros_yrN9aJc (1).jpg" class="img-fluid" id="-card-img" alt=""></a>
               </div>
               <div class="col-md-8">
                 <div class="card-body">
-                  <h4 class="card-title"><a href="noticias.html" id="card-title">A história por trás de Starfield, o jogo que demorou 25 anos para nascer</a></h5>
+                  <h4 class="card-title"><a href="noticias.php" id="card-title">A história por trás de Starfield, o jogo que demorou 25 anos para nascer</a></h5>
                   <p class="card-text text-light">Como a Bethesda criou seu novo RPG espacial, inspirado em clássicos da ficção científica e em sua própria paixão pelo cosmos.</p>
                   <p class="card-text"><small class="text-white-50">Ultíma atualização há 3 minutos</small></p>
                 </div>
