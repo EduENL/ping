@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap');
+ 
+ @font-face {
+     font-family: 'retro';
+     src: url(assets/Retro\ Gaming.ttf) format('truetype');
+     font-weight: normal;
+     font-style: normal;
+ }
+ 
+ :root {
+     --roxo-color: #CDA7FF;
+     --darkb-color: #1D438A;
+ }
+
+ body {
+   font-family: 'Josefin Sans', sans-serif;
+    background: url('img/cadastro/fundo-cadas.jpeg');
+    background-position: 100%;
+    backdrop-filter: blur 2px;
+ }
+
+   .roxo {
+      color: var(--roxo-color);
+   }
+
+   .navbar-brand {
+      font-family: 'retro', Times, serif;
+      color: var(--roxo-color);
+   }
+   .bi-person-circle {
+      font-size: 22px;
+   }
+
+   .bi-person-circle:hover {
+      color: white;
+   }
+
+   #nav-botao:hover {
+      color: rgba(255, 255, 255, 0.651)
+   }
+/* ============== */
+   #main-div {
+      background-color: #615968;
+   }
+
+   #text-section {
+      font-size: 20px;
+   }
+ .box-area {
+    width: 930px;
+ }
+
+ .right-box {
+    padding: 40px 30px 40px 40px;
+ }
+
+ ::placeholder {
+    font-size: 16px;
+ }
+
+
+ footer{
+   margin-top: 90px;
+   background-color: #343A40;
+}
+
+#-footer {
+   justify-content: space-between;
+}
+
+#--footer-h5{ /*Títulos*/
+   color: var(--roxo-color);
+}
+.nós{
+   color: white;
+}
+
+.links{
+   text-decoration: none;
+   color: #fff;
+}
+
+.bi-instagram{
+   color: white;
+}
+
+.bi-facebook{
+   color: white;
+}
+
+.bi-envelope-at-fill{
+   color: white;
+}
+
+.bi-telephone {
+   color: white;
+}
+
+.Copyright{
+   text-align: center;
+   color: rgb(146, 143, 143);
+}
+
+.ping-copyrigth {
+   color: rgb(146, 143, 143);
+}
+
+
+ @media only screen and (max-width: 768px) {
+    .box-area {
+        margin: 0 10px;
+    }
+ }
+
+
+ .right-box {
+    padding: 20px;
+ }
+
