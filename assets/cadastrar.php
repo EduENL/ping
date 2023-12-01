@@ -31,6 +31,8 @@ if(isset($_POST['submit']))
         $_SESSION['email_existe'] = true;
         header("Location: cadastro.php");
         exit;
+    } else {
+        header('location: perfilwelcome.php');
     }
 
     $result =  mysqli_query($conexao, "INSERT INTO usuarios(nome,telefone,email,senha,sexo) VALUES('$nome','$telefone','$email','$senha','$sexo')" );
