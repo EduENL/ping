@@ -16,7 +16,7 @@ if(isset($_POST['submit']))
     $senha = $_POST['senha']; 
     $sexo = $_POST['sexo']; 
     
-    $result =  mysqli_query($conexao, "INSERT INTO usuarios(nome,telefone,email,senha,sexo) VALUES('$nome','$telefone','$email','$senha','$sexo')" );
+    $result =  mysqli_query($conexao, "INSERT INTO usuarios(nome,telefone,email,senha,sexo) VALUES($nome,$telefone,$email,$senha,$sexo" );
 }
 
 ?>
