@@ -1,12 +1,46 @@
-body{
-    background: #615968;
-    font-family: Helvetica;
-    color: #fff;
-    text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+    font-family: 'retro';
+    src: url(assets/Retro\ Gaming.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+:root {
+    --roxo-color: #CDA7FF;
+    --darkb-color: #1D438A;
+}
+
+.text-secondary {
+    color: #CDA7FF !important;
+}
+body {
+    background-color: #615968;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.roxo {
+    color: var(--roxo-color);
+}
+
+.navbar-brand {
+    font-family: 'retro', Times, serif;
+    color: var(--roxo-color);
+}
+.bi-person-circle {
+    font-size: 22px;
+}
+
+.bi-person-circle:hover {
+    color: white;
+}
+
+#nav-botao:hover {
+    color: rgba(255, 255, 255, 0.651)
 }
 
 .chups {
-    align-items: center;
+    color: white;
 }
 
 .chupeta {
@@ -15,13 +49,16 @@ body{
     border-radius: 20px;
 }
 
-.butao {
-    border-radius: 5px;
+#button {
+    color: black;
     background-color: #CDA7FF;
     border-color: #155274;
-    width: 180px;
-    height: 40px;
 }
+
+#button:hover {
+    background-color: #8b8a8d;
+}
+
 
 
  

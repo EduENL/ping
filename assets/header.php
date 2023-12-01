@@ -20,9 +20,18 @@
         <li class="nav-item">
             <a class="nav-link active"  id="nav-botao" aria-current="page" href="index.php">Notícias</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Login copy.php"><i class="bi bi-person-circle roxo"></i></a>
-        </li>
+        
+        <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" id="nav-botao" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-person-circle roxo"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Login copy.php">Login</a></li>
+                <li><a class="dropdown-item" href="index.php">Perfil</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="index.php">Logout</a></li>
+            </ul>
+          </li>
       </ul>
     </div>
   </div>
