@@ -1,14 +1,6 @@
 <?php
-session_start();
-// print_r($_SESSION);
-
-if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true))
-{
-    unset($_SESSION['email']);
-    unset($_SESSION['senha']);
-    header('Location: Login copy.php');
-}
-
+    session_start();
+    include_once('testLogin.php')
 ?>
 
 
@@ -25,9 +17,6 @@ if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true)
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
     <link rel="stylesheet" href="perfilwelcome.css">  
-
-    
-
     <title>Bem-Vindo!</title>
 </head>
     <body>

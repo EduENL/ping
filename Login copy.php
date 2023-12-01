@@ -1,5 +1,6 @@
 <?php
-    session_start()
+    session_start();
+    include_once('testLogin.php');
 ?>
 
 <!DOCTYPE html>
