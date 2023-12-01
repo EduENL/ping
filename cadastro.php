@@ -16,7 +16,7 @@ if(isset($_POST['submit']))
     $senha = $_POST['senha']; 
     $sexo = $_POST['sexo']; 
     
-    $result =  mysqli_query($conexao, "INSERT INTO usuarios(nome,telefone,email,senha,sexo) VALUES($nome,$telefone,$email,$senha,$sexo" );
+    $result =  mysqli_query($conexao, "INSERT INTO usuarios(nome,telefone,email,senha,sexo) VALUES('$nome','$telefone','$email','$senha','$sexo')" );
 }
 
 ?>
@@ -85,7 +85,7 @@ if(isset($_POST['submit']))
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="submit" class="btn btn-lg btn-primary w-100 fs-6" style="background-color: #2F1062; border-color: black;" value="Cadastrar-se"></input>
+                        <input type="submit" name="submit" class="btn btn-lg btn-primary w-100 fs-6" style="background-color: #2F1062; border-color: black;" value="Cadastrar-se"></input>
                     </div>
                     <!-- <br> -->
                     
