@@ -26,7 +26,7 @@ if(isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha'])
         // print_r('Não existe');
         unset($_SESSION['email']);
         unset($_SESSION['senha']);
-        header('Location: Login copy.php');
+        header('Location: perfilwelcome.php');
     }
     else
     {
