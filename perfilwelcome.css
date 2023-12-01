@@ -1,0 +1,27 @@
+body{
+    background: #615968;
+    font-family: Helvetica;
+    color: #fff;
+    text-align: center;
+}
+
+.chups {
+    align-items: center;
+}
+
+.chupeta {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+}
+
+.butao {
+    border-radius: 5px;
+    background-color: #CDA7FF;
+    border-color: #155274;
+    width: 180px;
+    height: 40px;
+}
+
+
+ 

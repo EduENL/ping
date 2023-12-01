@@ -1,24 +1,6 @@
 <?php
-
-if(isset($_POST['submit']))
-{
-    // print_r($_POST['nome']);
-    // print_r($_POST['telefone']);
-    // print_r($_POST['email']);
-    // print_r($_POST['senha']);
-    // print_r($_POST['sexo']);
-
-    include_once ('config.php');
-
-    $nome = $_POST['nome']; 
-    $telefone = $_POST['telefone']; 
-    $email = $_POST['email']; 
-    $senha = $_POST['senha']; 
-    $sexo = $_POST['sexo']; 
-    
-    $result =  mysqli_query($conexao, "INSERT INTO usuarios(nome,telefone,email,senha,sexo) VALUES('$nome','$telefone','$email','$senha','$sexo')" );
-}
-
+    session_start();
+    include_once('assets/cadastrar.php')
 ?>
 
 <!DOCTYPE html>
@@ -58,6 +40,16 @@ if(isset($_POST['submit']))
                 <h2>Seja Bem-vindo!</h2>
                 <p>Complete os campos e realize seu cadastro.</p>
             </div>
+            <?php
+                if(isset($_SESSION['email_existe']) && $_SESSION['email_existe']):
+            ?>
+            <div class="bg-danger mb-4 py-2">
+                <p class="  card-text"><b>O email escolhido já existe. Informe outro e tente novamente.</b></p>
+            </div>
+            <?php
+                endif;
+                unset($_SESSION['email_existe']);
+            ?>
             <div>
                 <form action="cadastro.php" method="post">
                     <div class="input-group mb-3">
