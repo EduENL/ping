@@ -85,10 +85,10 @@ if(isset($_POST['submit']))
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <button type="submit" class="btn btn-lg btn-primary w-100 fs-6" style="background-color: #2F1062; border-color: black;" >Cadastrar-se</button>
+                        <input type="submit" class="btn btn-lg btn-primary w-100 fs-6" style="background-color: #2F1062; border-color: black;" value="Cadastrar-se"></input>
                     </div>
                     <!-- <br> -->
-                    <input type="submit" name="submit" id="submit">
+                    
                 </form>
             </div>
                     
