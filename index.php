@@ -9,6 +9,7 @@ if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true)
     header('Location: Login copy.php');
 }
 
+$logado = $_SESSION['email'];
 ?>
 
 <!DOCTYPE html>
