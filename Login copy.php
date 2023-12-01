@@ -50,7 +50,7 @@
                 <p>Estamos contentes com o seu retorno.</p>
             </div>
             <div>
-                <form action="#" method="post">
+                <form action="testLogin.php" method="post">
                     <div class="input-group mb-3">
                         <input type="email" name="email" id="email" class="form-control form-control-lg bg-light fs-6" placeholder="Email:">
                     </div>
@@ -67,7 +67,8 @@
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <button type="submit" class="btn btn-lg btn-primary w-100 fs-6" style="background-color: #951e8a; border-color: black;">Login</button>
+                        <input type="submit" name="submit"class="btn btn-lg btn-primary w-100 fs-6" style="background-color: #951e8a; border-color: black;"value="Entrar"></input>
+                        
                     </div>
                 </form>
             </div>
