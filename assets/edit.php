@@ -51,6 +51,20 @@ if (isset($_POST['atualizar'])) {
     }
 
     $stmt->close();
+
+} if (isset($_POST['excluir'])) {
+    
+    $stmt = $conexao->prepare("DELETE FROM usuarios WHERE idusuarios = $id");
+    
+    if ($stmt->execute()) {
+        header('Location: index.php');
+    exit();
+    } else {
+        header('Location: editar.php');
+    exit();
+    }
+
+    $stmt->close();
 }
 
 $conexao->close();

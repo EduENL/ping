@@ -55,7 +55,7 @@
                             <input type="submit" name="atualizar"class="butao" value="Atualizar"></input>
                         </div>
                         <div class="input-group">
-                            <input type="submit" name="excluir"class="butao" value="Excluir perfil"></input>
+                            <input type="submit" name="excluir"class="butao" value="Excluir"></input>
                         </div>
                     </div>
                 </div>
