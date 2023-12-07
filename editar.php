@@ -22,12 +22,27 @@
 
 <body>
     <div class="container">
-        <div class="img">
-            <img class="chupeta" src="assets/28d576ff2cd266730032fe84457c550413d89252d35bbd05fb2e9dd963bc9407_3.jpg" alt="">
-        </div>
-        
+    <?php
+        if(isset($_SESSION['homem_sexo']) && $_SESSION['homem_sexo']):
+    ?>
+    <div class="img">
+        <img class="chupeta" src="assets/homem.png" alt="">
+    </div>
+    <?php
+         endif;
+        unset($_SESSION['homem_sexo']);
+    ?>
+    <?php
+        if(isset($_SESSION['homem_sexo']) && $_SESSION['homem_sexo']):
+    ?>
+    <div class="img">
+        <img class="chupeta" src="assets/mulher.png" alt="">
+    </div>
+    <?php
+        endif;
+        unset($_SESSION['homem_sexo']);
+    ?>
         <div class="texto">
-            <h1 id="dois"><?php echo $nome2 ?></h1>
             
             <form action="editar.php" method="post">
                 <div class="conjuntao">

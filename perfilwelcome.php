@@ -24,7 +24,27 @@
         <div class="container">
             <div class="row justify-content-center align-items-center vh-100">
                 <div class="col-auto text-center chups">
-                    <img class="chupeta mx-auto" src="assets/28d576ff2cd266730032fe84457c550413d89252d35bbd05fb2e9dd963bc9407_3.jpg" alt="">
+                    <?php
+                        if(isset($_SESSION['homem'])):
+                            
+                    ?>
+                    <div class="img">
+                        <img class="chupeta" src="assets/homem.png" alt="">
+                    </div>
+                    <?php
+                        endif;
+                        unset($_SESSION['homem']);
+                    ?>
+                    <?php
+                        if(isset($_SESSION['mulher'])):
+                    ?>
+                    <div class="img">
+                        <img class="chupeta" src="assets/mulher.png" alt="">
+                    </div>
+                    <?php
+                        endif;
+                        unset($_SESSION['mulher']);
+                    ?>
                     <h1 class="my-3">Olá, <?php echo $_SESSION['nome'];?>! Seja Bem-Vindo!</h1>
                 <div class="d-flex flex-column">
                     <a href="editar.php" class="btn btn-primary btn-lg mb-4" id="button">Editar perfil</a>

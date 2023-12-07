@@ -67,5 +67,16 @@ if (isset($_POST['atualizar'])) {
     $stmt->close();
 }
 
+$sql = "SELECT sexo FROM usuarios WHERE email = '{$_SESSION['email']}'";
+    $results = mysqli_query($conexao, $sql);
+    $row = mysqli_fetch_assoc($results);
+    $sexo = $row['sexo'];
+
+    if($sexo == 'option1') {
+        $_SESSION['homem_sexo'] = true;
+    } elseif ($sexo == 'option2') {
+        $_SESSION['mulher_sexo'] = true;
+    }
+
 $conexao->close();
 ?>

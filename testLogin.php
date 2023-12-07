@@ -40,6 +40,17 @@
 
         }
     }
+
+    $sql = "SELECT sexo FROM usuarios WHERE email = '{$_SESSION['email']}'";
+    $results = mysqli_query($conexao, $sql);
+    $row = mysqli_fetch_assoc($results);
+    $sexo = $row['sexo'];
+    
+    if($sexo === 'option1') {
+        $_SESSION['homem'] = true;
+    } elseif ($sexo === 'option2') {
+        $_SESSION['mulher'] = true;
+    }
     // else
     // {
     // //     // Não acessa
