@@ -27,7 +27,7 @@ if (isset($_POST['submit'])) {
         header("Location: cadastro.php");
         exit;
     } else {
-        header('location: perfilwelcome.php');
+        header('location: Login copy.php');
     }
 
     $result =  mysqli_query($conexao, "INSERT INTO usuarios(nome, telefone, email, senha, sexo) VALUES('$nome', '$telefone', '$emailLowerCase', '$senha', '$sexo')");

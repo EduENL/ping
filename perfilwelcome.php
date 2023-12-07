@@ -1,6 +1,6 @@
 <?php
     session_start();
-    include_once('testLogin.php')
+    include_once('testLogin.php');
 ?>
 
 
@@ -25,10 +25,10 @@
             <div class="row justify-content-center align-items-center vh-100">
                 <div class="col-auto text-center chups">
                     <img class="chupeta mx-auto" src="assets/28d576ff2cd266730032fe84457c550413d89252d35bbd05fb2e9dd963bc9407_3.jpg" alt="">
-                    <h1 class="my-3">Olá, <?php echo $_SESSION['nome'];?> Seja Bem-Vindo!</h1>
+                    <h1 class="my-3">Olá, <?php echo $_SESSION['nome'];?>! Seja Bem-Vindo!</h1>
                 <div class="d-flex flex-column">
-                    <button class="btn btn-primary btn-lg mb-4" id="button">Editar perfil</button>
-                    <button class="btn btn-primary btn-sm w-75 mx-auto" id="button">Voltar para Home</button>
+                    <a href="editar.php" class="btn btn-primary btn-lg mb-4" id="button">Editar perfil</a>
+                    <a href="index.php" class="btn btn-primary btn-sm w-75 mx-auto" id="button">Voltar para Home</a>
                 </div>
                 </div>
             </div>

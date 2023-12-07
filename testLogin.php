@@ -28,15 +28,14 @@
         
         
         if ($row == 1) {
-            // print_r('Não existe');
             $row2 = mysqli_fetch_assoc($result);
             $_SESSION['email'] = $emailLowerCase;
+            $_SESSION['senha'] = $senha;
             $_SESSION['nome'] = $row2['nome'];
+            
             header('Location: perfilwelcome.php');
             exit();
-            // Adicione um parâmetro para indicar um erro
         } else {
-            // print_r('Existe');
             header('Location: Login copy.php');
 
         }
