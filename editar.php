@@ -5,7 +5,8 @@
 
 <?php
     include_once('assets/header.php')
-?>  
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -16,7 +17,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="editar.css">
-
     <title>Bem-Vindo!</title>
 </head>
 
@@ -30,7 +30,7 @@
             <h1 id="dois"><?php echo $nome2 ?></h1>
             
             <form action="editar.php" method="post">
-            <div class="conjuntao">
+                <div class="conjuntao">
                     <div class="conj1">
                         <div class="form-group">
                             <label for="name">Nome:</label>
@@ -53,10 +53,10 @@
                     </div>
                     <div class="conj3">
                         <div class="input-group">
-                            <input type="submit" name="atualizar"class="butao" value="Atualizar"></input>
+                            <input type="submit" name="atualizar"class="butao" value="Atualizar">
                         </div>
                         <div class="input-group">
-                            <input type="submit" name="excluir"class="butao" value="Excluir perfil"></input>
+                            <input type="submit" name="excluir"class="butao" value="Excluir perfil">
                         </div>
                     </div>
                 </div>

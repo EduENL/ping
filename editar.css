@@ -2,15 +2,16 @@ body {
     background: #615968;
     font-family: Helvetica;
     color: #fff;
-    display: flex;
+
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     margin: 0;
 }
 
 .container {
     display: flex;
+     height: 80%;
     align-items: center;
     padding: 20px;
 }
