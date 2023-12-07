@@ -5,7 +5,8 @@
 
 <?php
     include_once('assets/header.php')
-?>  
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -29,7 +30,7 @@
             <h1 id="dois"><?php echo $nome2 ?></h1>
             
             <form action="editar.php" method="post">
-            <div class="conjuntao">
+                <div class="conjuntao">
                     <div class="conj1">
                         <div class="form-group">
                             <label for="name">Nome:</label>
@@ -52,7 +53,7 @@
                     </div>
                     <div class="conj3">
                         <div class="input-group">
-                            <input type="submit" name="atualizar"class="butao" value="Atualizar"></input>
+                            <input type="submit" name="atualizar"class="butao" value="Atualizar">
                         </div>
                         <div class="input-group">
                             <input type="submit" name="excluir"class="butao" value="Excluir"></input>
