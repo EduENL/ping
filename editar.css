@@ -2,7 +2,6 @@ body {
     background: #615968;
     font-family: Helvetica;
     color: #fff;
-    display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -12,7 +11,11 @@ body {
 .container {
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
     padding: 20px;
+    max-width: 600px; /* Define uma largura máxima para o container */
+    margin: auto; /* Define margem automática para centralizar na horizontal */
 }
 
 .container .img {
