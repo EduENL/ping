@@ -40,6 +40,7 @@ if (isset($_POST['atualizar'])) {
             $nome2 = $_POST['name'];
             $email2 = $_POST['email'];
             $_SESSION ['senha'] = $_POST['senha'];
+            $_SESSION ['email'] = $_POST['email'];
             $_SESSION ['nome'] = $_POST['name'];
 
         header('Location: perfilwelcome.php');
