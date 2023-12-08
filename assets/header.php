@@ -29,7 +29,7 @@
                 <li><a class="dropdown-item" href="Login copy.php">Login</a></li>
                 <li><a class="dropdown-item" href="index.php">Perfil</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="assets/sair.php">Logout</a></li>
+                <li><a class="dropdown-item" href="assets/logout.php">Logout</a></li>
             </ul>
           </li>
       </ul>
