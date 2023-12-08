@@ -33,6 +33,12 @@
             $_SESSION['senha'] = $senha;
             $_SESSION['nome'] = $row2['nome'];
             
+            if ($_POST['lembrar'] == 'on') {
+                // Define um cookie para lembrar o usuário
+                setcookie('lembrar_login', $_SESSION['email'], time() + (30 * 24 * 60 * 60), "/");
+                setcookie('lembrar_senha', $_SESSION['senha'], time() + (30 * 24 * 60 * 60), "/");
+            }
+
             header('Location: perfilwelcome.php');
             exit();
         } else {
