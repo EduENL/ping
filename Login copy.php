@@ -61,7 +61,7 @@
                     <div class="input-group mb-5 d-flex justify-content-between">
                         <div class="form-check">
                             <input type="checkbox" class="form-check-input" id="formCheck">
-                            <label for="formCheck" class="form-check-label text-secondary"><small>Lembrar de mim</small></label>
+                            <label for="formCheck" name="lembrar" id="lembrar" class="form-check-label text-secondary"><small>Lembrar de mim</small></label>
                         </div>
                         <div class="forgot">
                             <small><a href="#">Esqueceu a senha?</a></small>

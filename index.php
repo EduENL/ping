@@ -1,3 +1,18 @@
+
+<?php
+session_start();
+
+// Verifica se os cookies existem e realiza login automático se existirem
+if (isset($_COOKIE['lembrar_login']) && isset($_COOKIE['lembrar_senha'])) {
+    $_SESSION['email'] = $_COOKIE['lembrar_login'];
+    $_SESSION['senha'] = $_COOKIE['lembrar_senha'];
+
+    // Redireciona para a página após o login
+    header('Location: perfilwelcome.php');
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
