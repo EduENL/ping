@@ -26,6 +26,15 @@
         $result = mysqli_query($conexao, $sql);
         $row = mysqli_num_rows($result);
         
+        function remember() {
+            // Verifica se as sessões 'email' e 'senha' estão definidas
+            if (isset($_SESSION['email']) && isset($_SESSION['senha'])) {
+                // Define um cookie para lembrar o e-mail e a senha do usuário
+                $validade = strtotime("+1 month");
+                setcookie('lembrar_login', $_SESSION['email'], $validade, "/", "", false, true);
+                setcookie('lembrar_senha', $_SESSION['senha'], $validade, "/", "", false, true);
+            }
+        }        
         
         if ($row == 1) {
             $row2 = mysqli_fetch_assoc($result);
@@ -33,12 +42,13 @@
             $_SESSION['senha'] = $senha;
             $_SESSION['nome'] = $row2['nome'];
             
-            if ($_POST['lembrar'] == 'on') {
-                // Define um cookie para lembrar o usuário
-                setcookie('lembrar_login', $_SESSION['email'], time() + (30 * 24 * 60 * 60), "/");
-                setcookie('lembrar_senha', $_SESSION['senha'], time() + (30 * 24 * 60 * 60), "/");
+
+            if (isset($_POST['lembrar']) == 'on') {
+                // Chama a função remember para definir os cookies
+                remember();
             }
 
+            
             header('Location: perfilwelcome.php');
             exit();
         } else {
@@ -46,6 +56,9 @@
 
         }
     }
+
+    $email_entrar = (isset($_COOKIE['lembrar_login'])) ? $_COOKIE['lembrar_login'] : '';
+    $senha_entrar = (isset($_COOKIE['lembrar_senha'])) ? $_COOKIE['lembrar_senha'] : '';
 
     $sql = "SELECT sexo FROM usuarios WHERE email = '{$_SESSION['email']}'";
     $results = mysqli_query($conexao, $sql);

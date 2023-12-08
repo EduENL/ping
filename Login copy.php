@@ -53,15 +53,15 @@
             <div>
                 <form action="testLogin.php" method="post">
                     <div class="input-group mb-3">
-                        <input type="email" name="email" id="email" class="form-control form-control-lg bg-light fs-6" placeholder="Email:">
+                        <input type="email" name="email" id="email" class="form-control form-control-lg bg-light fs-6" placeholder="Email:" value="<?= $email_entrar ?>">
                     </div>
                     <div class="input-group mb-1">
-                        <input type="password" name="senha" id="senha" class="form-control form-control-lg bg-light fs-6" placeholder="Senha:">
+                        <input type="password" name="senha" id="senha" class="form-control form-control-lg bg-light fs-6" placeholder="Senha:" value="<?= $senha_entrar ?>">
                     </div>
                     <div class="input-group mb-5 d-flex justify-content-between">
                         <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="formCheck">
-                            <label for="formCheck" name="lembrar" id="lembrar" class="form-check-label text-secondary"><small>Lembrar de mim</small></label>
+                            <input type="checkbox" class="form-check-input" id="formCheck" name="lembrar">
+                            <label for="formCheck" class="form-check-label text-secondary"><small>Lembrar de mim</small></label>
                         </div>
                         <div class="forgot">
                             <small><a href="#">Esqueceu a senha?</a></small>
