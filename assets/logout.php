@@ -1,9 +1,15 @@
 <?php
-{
+if (!session_id()) {
     session_start();
-    unset($_SESSION['email']);
-    unset($_SESSION['senha']);
-    header("Location: ..\Login copy.php");
-    exit ();
 }
+
+include_once('..\testLogin.php');
+
+unset($_SESSION['email']);
+unset($_SESSION['senha']);
+forget();
+
+header("Location: ..\Login copy.php");
+exit();
+
 ?>

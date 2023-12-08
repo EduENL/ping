@@ -5,6 +5,12 @@ if (!session_id()) {
 
 include_once('assets/config.php');
 
+function forget() {
+    $validade = time() - 3600;
+    setcookie('lembrar_login', $_SESSION['email'], $validade, "/", "", false, true);
+    setcookie('lembrar_senha', $_SESSION['senha'], $validade, "/", "", false, true);
+}
+
 $sql = "SELECT idusuarios, email, nome, telefone, senha FROM usuarios WHERE email = '{$_SESSION['email']}' AND senha = MD5('{$_SESSION['senha']}')";
 $results = mysqli_query($conexao, $sql);
 
@@ -57,6 +63,7 @@ if (isset($_POST['atualizar'])) {
     $stmt = $conexao->prepare("DELETE FROM usuarios WHERE idusuarios = $id");
     
     if ($stmt->execute()) {
+        forget();
         header('Location: index.php');
     exit();
     } else {
@@ -64,19 +71,22 @@ if (isset($_POST['atualizar'])) {
     exit();
     }
 
+
     $stmt->close();
 }
 
-$sql = "SELECT sexo FROM usuarios WHERE email = '{$_SESSION['email']}'";
+if (isset($_SESSION['email'])) {
+    $sql = "SELECT sexo FROM usuarios WHERE email = '{$_SESSION['email']}'";
     $results = mysqli_query($conexao, $sql);
     $row = mysqli_fetch_assoc($results);
     $sexo = $row['sexo'];
-
-    if($sexo == 'option1') {
-        $_SESSION['homem_sexo'] = true;
-    } elseif ($sexo == 'option2') {
-        $_SESSION['mulher_sexo'] = true;
+    
+    if ($sexo === 'option1') {
+        $_SESSION['homem'] = true;
+    } elseif ($sexo === 'option2') {
+        $_SESSION['mulher'] = true;
     }
+}
 
 $conexao->close();
 ?>

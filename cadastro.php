@@ -43,9 +43,10 @@
             <?php
                 if(isset($_SESSION['email_existe']) && $_SESSION['email_existe']):
             ?>
-            <div class="bg-danger mb-4 py-2">
-                <p class="  card-text"><b>O email escolhido já existe. Informe outro e tente novamente.</b></p>
-            </div>
+            <div class="alert alert-danger alert dismissible mb-4 py-2">
+                    <strong>O email escolhido já existe. Informe outro e tente novamente.</strong>
+                    <button class="btn-close" data-bs-dismiss="alert"></button>
+                </div>
             <?php
                 endif;
                 unset($_SESSION['email_existe']);

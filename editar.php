@@ -23,24 +23,25 @@
 <body>
     <div class="container">
     <?php
-        if(isset($_SESSION['homem_sexo']) && $_SESSION['homem_sexo']):
-    ?>
-    <div class="img">
-        <img class="chupeta" src="assets/homem.png" alt="">
-    </div>
-    <?php
-         endif;
-        unset($_SESSION['homem_sexo']);
-    ?>
-    <?php
-        if(isset($_SESSION['homem_sexo']) && $_SESSION['homem_sexo']):
-    ?>
-    <div class="img">
-        <img class="chupeta" src="assets/mulher.png" alt="">
-    </div>
+        if(isset($_SESSION['homem'])):
+                            
+        ?>
+        <div class="img">
+            <img class="chupeta" src="assets/homem.png" alt="">
+        </div>
+        <?php
+            endif;
+            unset($_SESSION['homem']);
+        ?>
+        <?php
+            if(isset($_SESSION['mulher'])):
+        ?>
+        <div class="img">
+            <img class="chupeta" src="assets/mulher.png" alt="">
+        </div>
     <?php
         endif;
-        unset($_SESSION['homem_sexo']);
+        unset($_SESSION['mulher']);
     ?>
         <div class="texto">
             

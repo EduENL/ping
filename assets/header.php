@@ -26,10 +26,24 @@
                 <i class="bi bi-person-circle roxo"></i>
               </a>
               <ul class="dropdown-menu">
+              <?php
+                  if(isset($_SESSION['com_perfil'])):
+                ?>
                 <li><a class="dropdown-item" href="Login copy.php">Login</a></li>
-                <li><a class="dropdown-item" href="index.php">Perfil</a></li>
+                <?php
+                  endif;
+                  unset($_SESSION['com_perfil']);
+                ?>
+                <?php
+                  if(isset($_SESSION['sem_perfil'])):
+                ?>
+                <li><a class="dropdown-item" href="perfilwelcome.php">Perfil</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="assets/logout.php">Logout</a></li>
+                <?php
+                  endif;
+                  unset($_SESSION['sem_perfil']);
+                ?>
             </ul>
           </li>
       </ul>

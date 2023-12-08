@@ -51,6 +51,17 @@
                 <p>Estamos contentes com o seu retorno.</p>
             </div>
             <div>
+                <?php
+                    if(isset($_SESSION['login_incorreto'])):
+                ?>
+                <div class="alert alert-danger alert dismissible mb-4 py-2">
+                    <strong>Senha ou email incorreto. Tente novamente.</strong>
+                    <button class="btn-close" data-bs-dismiss="alert"></button>
+                </div>
+                <?php
+                    endif;
+                    unset($_SESSION['login_incorreto']);
+                ?>
                 <form action="testLogin.php" method="post">
                     <div class="input-group mb-3">
                         <input type="email" name="email" id="email" class="form-control form-control-lg bg-light fs-6" placeholder="Email:" value="<?= $email_entrar ?>">
