@@ -63,7 +63,10 @@ if (isset($_POST['atualizar'])) {
     $stmt = $conexao->prepare("DELETE FROM usuarios WHERE idusuarios = $id");
     
     if ($stmt->execute()) {
+        unset($_SESSION['email']);
+        unset($_SESSION['senha']);
         forget();
+        print_r($_SESSION['email']);
         header('Location: index.php');
     exit();
     } else {
@@ -86,6 +89,12 @@ if (isset($_SESSION['email'])) {
     } elseif ($sexo === 'option2') {
         $_SESSION['mulher'] = true;
     }
+}
+
+if (empty($_SESSION['email']) || empty($_SESSION['senha'])) {
+    $_SESSION['com_perfil'] = true;
+} else {
+    $_SESSION['sem_perfil'] = true;
 }
 
 $conexao->close();

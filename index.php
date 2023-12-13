@@ -1,7 +1,7 @@
 
 <?php
 session_start();
-include_once('testLogin.php')
+include_once('testLogin.php');
 // Verifica se os cookies existem e realiza login automático se existirem
 ?>
 

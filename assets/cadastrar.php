@@ -33,5 +33,11 @@ if (isset($_POST['submit'])) {
     $result =  mysqli_query($conexao, "INSERT INTO usuarios(nome, telefone, email, senha, sexo) VALUES('$nome', '$telefone', '$emailLowerCase', '$senha', '$sexo')");
 }
 
+if (empty($_SESSION['email']) || empty($_SESSION['senha'])) {
+    $_SESSION['com_perfil'] = true;
+} else {
+    $_SESSION['sem_perfil'] = true;
+}
+
 $conexao->close();
 ?>
