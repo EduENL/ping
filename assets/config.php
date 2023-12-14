@@ -1,7 +1,7 @@
 <?php
 $dbhost = 'Localhost';
 $dbUsername = 'root';
-$dbPassword = '123456';
+$dbPassword = '';
 $dbName = 'formulario_ping';
 
 
